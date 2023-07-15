@@ -90,22 +90,12 @@ img_utown = Image.open("images/utown.jpg")
 img_lh = Image.open("images/lh.jpg")
 img_ifg = Image.open("images/ifg.jpg")
 #Assets for competitions
-img_lit = Image.open("images/legalease.jpg")
-img_lifehack2 = Image.open("images/lifehack2.jpg")
-img_lifehack = Image.open("images/lifehack.jpg")
-img_he4d = Image.open("images/he4d.jpg")
-img_ecc = Image.open("images/ecc.jpg")
-img_shopee = Image.open("images/shopee.png")
-img_sbcc = Image.open("images/sbcc.png")
-img_runes = Image.open("images/runes.png")
+img_exh = Image.open('images/exhibit.jpg')
+img_byju = Image.open('images/byju.jpg')
+img_quiz = Image.open('images/quiz.jpg')
 # Assets for education
-img_sji = Image.open("images/sji.jpg")
-img_tpjc = Image.open("images/tpjc.jpg")
 img_fiem = Image.open("images/fiem.jpg")
-img_poc = Image.open("images/poc.jpg")
-img_gmss = Image.open("images/gmss.jpg")
-img_sjij = Image.open("images/sjij.jpg")
-img_dsa = Image.open("images/dsa.jpg")
+img_kvb = Image.open("images/kvb.jpg")
 # Assets for Certification
 img_aws = Image.open("images/aws.png")
 img_ud1 = Image.open("images/ud1.jpg")
@@ -120,37 +110,18 @@ img_np2 = Image.open("images/nptel2.png")
 img_np3 = Image.open("images/nptel3.png")
 # Assets for experiences
 img_mm = Image.open("images/mm.png")
-img_iasg = Image.open("images/iasg.jpg")
 img_epam = Image.open("images/epam.png")
-img_yll = Image.open("images/yll.jpg")
-img_saf = Image.open("images/saf.jpg")
 img_cognizant = Image.open("images/cognizant.png")
 # Assets for projects
-image_names_projects = ["ecom", "chatgpt", "videogames", "health", 
-                         "biopics", "anime", "word2vec", "cellphone", 
-                         "spotify", "map", "gephi", "fob", "get", "ttdb",
-                         "blockchain"]
-images_projects = [Image.open(f"images/{name}.{'jpg' if name not in ('map', 'gephi', 'health') else 'png'}") for name in image_names_projects]
-# Assets for volunteering
-image_names_vol = ["sdslogo", "sportslogo", "gdsclogo", "csclogo", 
-                         "nussulogo", "sklogo", "simlogo", "tpjclogo", 
-                         "sjilogo", "nuspc"]
-images_vol = [Image.open(f"images/{name}.{'jpg' if name not in ('map', 'gephi', 'health') else 'png'}") for name in image_names_vol]
+vid_tf0 = open('images/tensorflow.mp4', 'rb')
+vid_tf1 = vid_tf0.read()
+img_fifa = Image.open('images/fifa.jpeg')
+img_blind = Image.open('images/blind.jpg')
+
+
+
 # Assets for blog
-img_qb = Image.open("images/qb.jpg")
-img_mayans = Image.open("images/mayans.jpg")
-img_outlier = Image.open("images/outlier.png")
-img_dac = Image.open("images/dac.png")
-img_raffles = Image.open("images/raffles.jpg")
-img_covid = Image.open("images/covid.jpg")
-img_gender = Image.open("images/gender.jpg")
-img_hci = Image.open("images/hci.jpg")
-img_wordcloud = Image.open("images/wordcloud.jpg")
-img_taste = Image.open("images/taste.jpg")
-img_measles = Image.open("images/measles.jpeg")
-img_bmsaew = Image.open("images/bmsaew.png")
-img_dac1 = Image.open("images/dac1.png")
-img_dac2 = Image.open("images/dac2.png")
+
 # Assets for gallery
 # 2005
 img_2005_1 = Image.open("gallery/2005_1.jpg")
@@ -255,7 +226,7 @@ for i in range(1, num_images + 1):
 #img_lottie_animation = Image.open("images/lottie_animation.gif")
 # Assets for contact
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_abqysclq.json")
-
+img_contact = Image.open('images/contact.jpg')
 img_linkedin = Image.open("images/linkedin.png")
 img_github = Image.open("images/github.png")
 img_email = Image.open("images/email.png")
@@ -355,11 +326,11 @@ with st.sidebar:
         "nav-link-selected": {"background-color": "#cfcfb4"},
     }
     )
-    youtube_url = "https://www.youtube.com/@harrychangjr"
-    linkedin_url = "https://www.linkedin.com/in/harrychangjr/"
-    github_url = "https://github.com/harrychangjr"
-    wordpress_url = "https://antcabbage.wordpress.com"
-    email_url = "mailto:harrychang.work@gmail.com"
+    youtube_url = ""
+    linkedin_url = "https://www.linkedin.com/in/arijeet-dasgupta/"
+    github_url = "https://github.com/DhumPotashPermanganate/"
+    wordpress_url = ""
+    email_url = "mailto:arigofficial71@gmail.com"
     with st.container():
         l, m, r = st.columns((0.11,2,0.1))
         with l:
@@ -466,7 +437,7 @@ elif choose == "Experience":
     }
     </style>
     ''', unsafe_allow_html=True)
-#st.write("##")
+
 
 # Create section for Technical Skills
 elif choose == "Technical Skills":
@@ -507,7 +478,7 @@ elif choose == "Education":
         with st.container():
             image_column, text_column = st.columns((1,2.5))
             with image_column:
-                st.image(img_poc)
+                st.image(img_kvb)
             with text_column:
                 st.subheader("AISSCE, Class 12, [Kendriya Vidyalaya, Ballygunge](https://baligunge.kvs.ac.in/) (2016-2018)")
                 st.write("Coursework: Physics, Chemistry, Computer Science, Mathematics, English")
@@ -515,7 +486,7 @@ elif choose == "Education":
         with st.container():
             image_column, text_column = st.columns((1,2.5))
             with image_column:
-                st.image(img_tpjc)
+                st.image(img_kvb)
             with text_column:
                 st.subheader("AISSE, Class 10 - [Kendriya Vidyalaya, Ballygunge](https://baligunge.kvs.ac.in/) (2006 - 2016)")
                 st.write("Coursework: English, Hindi, Science, Mathematics, Social Studies")
@@ -612,214 +583,40 @@ elif choose == "Projects":
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
-            st.subheader("Blockchain Social Media Webscraper")
-            st.write("*Project for US-based stealth startup, Bitmetrix.ai (in progress)*")
+            st.subheader("Hand Gesture Recognition Model using TensorFlow")
+            st.write("*Final Year Project for University*")
             st.markdown("""
-            - Utilised snscrape to scrape tweets from top blockchain websites such as CoinGecko and CoinMarketCap
-            - Built webscraper using BeautifulSoup4 to scrape content from fintech news websites such as https://blockchain.news
+            - Used TensorFlow SSD 320x320 model to create our own hand gesture recognition model.
+            - The data used by it was completely made by us using pcitures of all the team members
+            - Gave excellent results in limited surroundings, given that the dataset we created was of 200 images
+            - Almost 90% and above accuracy in most of the cases
             """)
-            # st.write("[Github Repo](https://github.com/harrychangjr/sales-prediction)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/blockchain-webscraping",)
         with image_column:
-            st.image(images_projects[14])
+            st.video(vid_tf1)
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
-            st.subheader("Enhanced TikTok Analytics Dashboard")
+            st.subheader("FIFA Web Scraper and Analytical tool")
             st.write("*Self-initiated project*")
             st.markdown("""
-            - Provided options to plot Tiktok user overview data using 3D lineplots, 3D scatterplots, 3D surfaceplots and radar chart from Plotly
-            - Filtered number of hashtags per Tiktok video to investigate relationship between hashtag count and other variables: views, comments, likes and shares
-            - Performed hashtag analysis using Word2Vec to calculate cosine similarity scores and deduce correlation with average performance scores of each hashtag
+            - Used Selenium Webdriver to scrape the data from internet of FIFA players and store them as csv
+            - Used pandas, numpy and matplotlib to analyse different players of different metrics to compare them
             """)
-            # st.write("[Github Repo](https://github.com/harrychangjr/sales-prediction)")
-            mention(label="Streamlit App", icon="streamlit", url="https://huggingface.co/spaces/harrychangjr/tiktok_analytics",)
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/tiktok-analytics",)
         with image_column:
-            st.image(images_projects[13])
+            st.image(img_fifa)
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
-            st.subheader("Creating Sales Volume Prediction Model with Regression Methods")
-            st.write("*Self-initiated project based on e-commerce case study*")
+            st.subheader("Blind Cap")
+            st.write("*Project for Exhibit'19, Intra-college project competetion*")
             st.markdown("""
             - Conducted exploratory data analysis (EDA) to identify relationships between variables using correlation heatmaps and histograms
             - Trained and compared multiple regression, random forest and XGBoost to build optimal model for sales volume prediction
             - Performed randomized search with cross-validation to increase performance of random forest regressor and reduce MSE
             """)
-            # st.write("[Github Repo](https://github.com/harrychangjr/sales-prediction)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/sales-prediction",)
         with image_column:
-            st.image(images_projects[0])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Optimising Article Quality with ChatGPT and NLP")
-            st.write("*Self-initiated project using past articles written for module SP1541: Exploring Science Communication in Popular Science in Academic Year 2020/21 Semester 1*")
-            st.markdown("""
-            - Preliminary analysis - comparing word counts, readability scores and sentiment (compound) scores of all 6 article variants using NLTK and Textstat
-            - Generated word clouds to highlight frequently used words in each article variant
-            - Identified top 10 most commonly used words between variants of the same article to assess suitability of ChatGPT in enhancing article quality
-            """)
-            #st.write("[Github Repo](https://github.com/harrychangjr/sp1541-nlp)")
-            mention(label="Streamlit App", icon="streamlit", url="https://sp1541-nlp.streamlit.app",)
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/sp1541-nlp",)
-        with image_column:
-            st.image(images_projects[1])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Statistical Learning: Analysis on Video Game Sales")
-            st.write("*Completed project within 48 hours for module ST4248: Statistical Learning II in Academic Year 2022/23 Semester 2*")
-            #st.write("Methods performed on [Kaggle dataset](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings):")
-            st.markdown("""
-            - Utilised multiple regression to investigate impact of publishers on global sales by regression coefficient, including performing one-hot encoding on 'Publisher' categorical variable
-            - Compared performances of multiple linear regression, random forest and XGBoost to predict global sales using critic scores and user scores from Metacritic
-            - Trained linear mixed-effects model to investigate impact of publishers, platform and genres in global sales
-            """)
-            #st.write("[Github Repo](https://github.com/harrychangjr/st4248-termpaper) | [Term Paper](https://github.com/harrychangjr/st4248-termpaper/blob/main/ST4248%20Term%20Paper%20(A0201825N)%20v5.pdf)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/st4248-termpaper",)
-        with image_column:
-            st.image(images_projects[2])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Statistical Learning: Nourish Your Body with Data")
-            st.write("*Completed group project for module ST4248: Statistical Learning II in Academic Year 2022/23 Semester 2*")
-            st.markdown("""
-            - Adapted [previous project](https://drive.google.com/file/d/10ZOdQ8Q7UnevXxODAQs1YOstNSsiKh7G/view?usp=sharing) from DSA3101: Data Science in Practice, with the usage of statistical learning methods instead
-            - Performed random forest classification and clustering methods to identify different consumer segments of grocery shoppers in supermarkets
-            - Built recommendation system using matrix factorisation to recommend healthier food alternatives for grocery shoppers from different backgrounds
-            """)
-            #st.write("[Final Report](https://drive.google.com/file/d/1YuYxSTuDstSvyUa-bn782sLE5kCfbyH8/view?usp=sharing) | [Pitch Deck](https://www.canva.com/design/DAFeSnJeqgM/uXpz0kw8e7If4T1PG2tpaQ/view?utm_content=DAFeSnJeqgM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) | [Product Demo](https://www.youtube.com/watch?v=XMlt-kfdC7g)")
-            mention(label="Final Report", icon="📄", url="https://drive.google.com/file/d/1YuYxSTuDstSvyUa-bn782sLE5kCfbyH8/view?usp=sharing",)
-        with image_column:
-            st.image(images_projects[3])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Data Science Project on Biopics Dataset from Kaggle")
-            st.write("*Self-initiated project using various machine learning methods on [biopics dataset](https://www.kaggle.com/datasets/fivethirtyeight/fivethirtyeight-biopics-dataset)*")
-            st.markdown("""
-            - Ran regression models to predict box office revenue (linear regression, random forest, support vector machines)
-            - Used k-means clustering with principal components analysis to identify similar types of movies
-            - Built content-based recommendation system using cosine similarity to recommend similar movies based on input title
-            """)
-            #st.write("[Github Repo](https://github.com/harrychangjr/biopics) | [RPubs](https://rpubs.com/harrychangjr/biopics)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/biopics",)
-        with image_column:
-            st.image(images_projects[4])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Optimisation for Large-Scale Data-Driven Inference: Anime Recommendation System")
-            st.write("*Completed assignment for module DSA4212: Optimisation for Large-Scale Data-Driven Inference in Academic Year 2022/23 Semester 2*")
-            st.markdown("""
-            - Built recommendation system using various non-factor models, including content-based collaborative filtering and clustering
-            - Utilised matrix factorisation (single value decomposition) to optimise performance of recommendation system with lower test MSE
-            - Provided optional recommendations to further optimise performance e.g scraping additional data, using deep learning methods
-            """)
-            #st.write("[Github Repo](https://github.com/harrychangjr/dsa4212) | [Report](https://github.com/harrychangjr/dsa4212/blob/main/DSA4212%20Assignment%202%20Group%2039%20Report.pdf)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/dsa4212",)
-        with image_column:
-            st.image(images_projects[5])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Optimisation for Large-Scale Data-Driven Inference: Word Embedding")
-            st.write("*Completed assigmment for module DSA4212: Optimisation for Large-Scale Data-Driven Inference in Academic Year 2022/23 Semester 2*")
-            st.markdown("""
-            - Trained Word2Vec model on 20 Newsgroups dataset from scikit-learn package in Python, which provides a number of similar words based on input word
-            - Evaluated usefulness of model by applying model to text classification (46% accuracy) and sentiment analysis (86.4% accuracy)
-            """)
-            #st.write("[Github Code](https://github.com/harrychangjr/dsa4212/blob/main/DSA4212%20Assignment%203%20Group%2039.ipynb) | [Report](https://github.com/harrychangjr/dsa4212/blob/main/DSA4212%20Assignment%203%20Group%2039%20Report.pdf)")
-            mention(label="Github Code", icon="github", url="https://github.com/harrychangjr/dsa4212/blob/main/DSA4212%20Assignment%203%20Group%2039.ipynb",)
-        with image_column:
-            st.image(images_projects[6])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Data-Driven Marketing: Exploration of cellphone billing and subscriber data")
-            st.write("*Self-initiated project based on past assignment from module BT4211: Data-Driven Marketing*")
-            st.markdown("""
-            - Performed preliminary churn analysis, customer segmentation and descriptive analysis to understand more about dataset
-            - Trained logit and probit models, as well as providing model estimations for duration models
-            - Utilised random forest classifier to predict customer churn
-            """)
-            #st.write("[Github Repo](https://github.com/harrychangjr/cellphone-billing) | [RPubs](https://rpubs.com/harrychangjr/cellphone)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/cellphone-billing",)
-        with image_column:
-            st.image(images_projects[7])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Data Visualization: Analysis on Spotify Dataset from [tidytuesday](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21)")
-            st.write("*Completed group project for module DSA2101: Essential Data Analytics Tools: Data Visualization in Academic Year 2021/22 Semester 2*")
-            st.markdown("""
-            - Investigated variables that differentiates songs of different genres, which could be useful in designing recommendation systems
-            - Explored how do the four seasons affect number of songs produced in each period
-            - Visualizations used: ridgeline faceted density plot, boxplot, line chart, faceted donut chart
-            """)
-            #st.write("[Github Code](https://github.com/harrychangjr/dsa2101/blob/main/DSA2101_Group%20B.Rmd) | [RPubs](https://rpubs.com/harrychangjr/dsa2101-groupb)")
-            mention(label="Github Code", icon="github", url="https://github.com/harrychangjr/dsa2101/blob/main/DSA2101_Group%20B.Rmd",)
-        with image_column:
-            st.image(images_projects[8])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Computers and the Humanities: Chloropleths using Google Sheets and Folium in Python")
-            st.write("*Completed assignment for module GET1030: Computers and the Humanities in Academic Year 2020/21 Semester 2*")
-            st.markdown("""
-            - Visualized the total number of performances of A Doll's House by country, using a chloropleth from Google Sheets
-            - Drafted scatterplots and boxplots using seaborn to investigate relationship between number of events per country and number of years these plays have been performed
-            - Created chloropleth using Folium in Google Colab to compare total performance counts in China, categorised by province
-            """)
-            #st.write("[Google Sheets](https://docs.google.com/spreadsheets/d/1NBlGM7Sjcybbpl1Esa55qLRJw-Seti1LhC93EhV_68w/edit?usp=sharing) | [Google Colab](https://colab.research.google.com/drive/1RHqtb5XC7PkJDpNEb-BY3tO-8mI2j32E?usp=sharing)")
-            mention(label="Google Drive", icon="🗂️", url="https://drive.google.com/drive/folders/1Iva0oLZim6zJlAndoSzR63pUq4NCznim?usp=share_link",)
-        with image_column:
-            st.image(images_projects[9])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Computers and the Humanities: Network Analysis on Harry Potter Film Database")
-            st.write("*Completed assignment for module GET1030: Computers and the Humanities in Academic Year 2020/21 Semester 2*")
-            st.markdown("""
-            - Utilised custom Python file based on NetworkX and Glob to create networks using Harry Potter film database
-            - Drafted visualizations using matplotlib and seaborn to compare densities and weighted degree values of nodes from generated networks
-            - Customised network visualization using Gephi to investigate relationship between various Harry Potter film directors
-            """)
-            #st.write("[Github Code](https://github.com/harrychangjr/get1030/blob/main/A0201825N_GET1030_Tutorial_4.ipynb)")
-            mention(label="Github Code", icon="github", url="https://github.com/harrychangjr/get1030/blob/main/A0201825N_GET1030_Tutorial_4.ipynb",)
-        with image_column:
-            st.image(images_projects[10])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Computers and the Humanities: Text Processing and Analysis on Song Lyrics")
-            st.write("*Completed assignment for module GET1030: Computers and the Humanities in Academic Year 2020/21 Semester 2*")
-            st.markdown("""
-            - Utilised custom Python file based on NetworkX and Glob to create networks using Harry Potter film database
-            - Drafted visualizations using matplotlib and seaborn to compare proportions of nouns and verbs between different songs
-            - Analysed type/token ratios of songs from both albums to evaluate which album produced better quality songs based on words used
-            """)
-            #st.write("[Github Code](https://github.com/harrychangjr/get1030/blob/main/A0201825N%20-%20GET1030%20Tutorial%203.ipynb)")
-            mention(label="Github Code", icon="github", url="https://github.com/harrychangjr/get1030/blob/main/A0201825N%20-%20GET1030%20Tutorial%203.ipynb",)
-        with image_column:
-            st.image(images_projects[11])
-    with st.container():
-        text_column, image_column = st.columns((3,1))
-        with text_column:
-            st.subheader("Computers and the Humanities: Spotify in the Covid-19 Era")
-            st.write("*Completed group project for module GET1030: Computers and the Humanities in Academic Year 2020/21 Semester 2*")
-            st.markdown("""
-            - Compiled and scraped Spotify data from [Spotify](https://www.spotifycharts.com), [Kaggle](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks), and [OWID](https://ourworldindata.org/coronavirus/country/singapore) to analyse top songs played in Singapore during Covid-19
-            - Drafted Tableau dashboard to showcase correlation between various features of top songs, including tempo, acousticness and popularity
-            - Embedded 30-second snippet of featured song on dashboard for increased interactiveness
-            """)
-            #st.write("[Github Code](https://github.com/harrychangjr/get1030/blob/main/A0201825N%20-%20GET1030%20Tutorial%203.ipynb)")
-            mention(label="Final Report", icon="📄", url="https://github.com/harrychangjr/get1030/blob/main/GET1030%20Final%20Project.pdf",)
-        with image_column:
-            st.image(images_projects[12])
+            st.image(img_blind)
+
     
 elif choose == "Competitions":
     # Create section for Competitions
@@ -828,88 +625,46 @@ elif choose == "Competitions":
     with st.container():
         image_column, text_column = st.columns((1,3))
         with image_column:
-            st.image(img_lit)
+            st.image(img_exh)
+        with text_column:
+            st.subheader("Exhibit-19 (Future Institute of Engineering and Management")
+            st.write("Third Position")
+            st.markdown("""
+                - Made blind cap using Arduino and light sensor
+                - Can be used by blind people, the cap beeps and the frequency of beep increase as some object comes nearby to the person wearing the cap
+                - Secured 3rd Prize in the the Competition
+            """)
+    with st.container():
+        image_column, text_column = st.columns((1,3))
+        with image_column:
+            st.image(img_quiz)
             #st.empty()
         with text_column:
-            st.subheader("[SMU-LIT Hackathon 2023](https://www.smulit.org/hackathon-2023/) - Hosted by [SMU Legal-in-Tech Club](https://smulit.org)")
-            st.write("Built LegalEase with OpenAI - a Streamlit-based web application empowering lawyers in hybrid working environments with optimal task scheduling.")
-            #st.write("[Devpost](https://devpost.com/software/quest-busters) | [Github Repo](https://github.com/yuechen2001/LifeHack2022) | [Pitch Deck](https://www.canva.com/design/DAFGF_nbyZ8/noJnq3IGDdX6nvu7M_2pXQ/view?utm_content=DAFGF_nbyZ8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) | [Demo Video](https://www.youtube.com/watch?v=su3_Y3yzeh8)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/legalease",)
+            st.subheader("Yantra 2019 (Future Institute of Engineering and Management")
+            st.write("First Position")
+            st.markdown("""
+                - Won intra-college technical quiz competition
+                - Comprised of three rounds, cleared all them while sustaining the top position
+            """)
     with st.container():
         image_column, text_column = st.columns((1,3))
         with image_column:
-            st.image(img_lifehack2)
+            st.image(img_byju)
             #st.empty()
         with text_column:
-            st.subheader("[NUS LifeHack 2023](https://lifehack-website.web.app//) - Hosted by [NUS Students' Computing Club](https://nuscomputing.com/)")
-            st.write("Awarded Top 15 Finalist out of 141 team submissions")
-            st.write("Built and integrated PassionPassport with ChatGPT - a Streamlit-based web application that recommends travel locations based on one’s hobbies.")
-            #st.write("[Devpost](https://devpost.com/software/quest-busters) | [Github Repo](https://github.com/yuechen2001/LifeHack2022) | [Pitch Deck](https://www.canva.com/design/DAFGF_nbyZ8/noJnq3IGDdX6nvu7M_2pXQ/view?utm_content=DAFGF_nbyZ8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) | [Demo Video](https://www.youtube.com/watch?v=su3_Y3yzeh8)")
-            mention(label="Github Repo", icon="github", url="https://github.com/BrendanCheong/lifehack-2023",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_lifehack)
-        with text_column:
-            st.subheader("[NUS LifeHack 2022](https://lifehack-2022.vercel.app/) - Hosted by [NUS Students' Computing Club](https://nuscomputing.com/)")
-            st.write("Awarded Theme Best - Safety and Overall 2nd Place out of 117 team submissions")
-            st.write("Ideated and developed Drive Woke! - a Flutter-based mobile application that aims to keep drivers awake by simulating conversations")
-            #st.write("[Devpost](https://devpost.com/software/quest-busters) | [Github Repo](https://github.com/yuechen2001/LifeHack2022) | [Pitch Deck](https://www.canva.com/design/DAFGF_nbyZ8/noJnq3IGDdX6nvu7M_2pXQ/view?utm_content=DAFGF_nbyZ8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) | [Demo Video](https://www.youtube.com/watch?v=su3_Y3yzeh8)")
-            mention(label="Github Repo", icon="github", url="https://github.com/yuechen2001/LifeHack2022",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_he4d)
-        with text_column:
-            st.subheader("NUS Fintech Month Hackathon 2021 - Hosted by [NUS Fintech Society](https://fintechsociety.comp.nus.edu.sg/)")
-            st.write("Awarded Overall 2nd Place")
-            st.write("Ideated a multi-pronged approach using blockchain and machine learning methods to improve fraud detection amongst complex entities in a digital or hybrid (digital and manual) operating environment")
-            #st.write("[Pitch Deck](https://www.linkedin.com/feed/update/urn:li:ugcPost:6761489595420037120/)")
-            mention(label="Pitch Deck", icon="🪧", url="https://www.linkedin.com/feed/update/urn:li:ugcPost:6761489595420037120/)",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_ecc)
-        with text_column:
-            st.subheader("NUS Economics Case Competition - Hosted by [NUS Economics Society](https://www.nuseconsoc.com/)")
-            st.write("Performed financial modelling and market research to suggest methods for brick-and-mortar retailers to compete against e-commerce stores")
-            #st.write("[Report](https://drive.google.com/drive/u/4/folders/1NfsRr1P3xAkuJq3HEJ9LQU1uCo6TZIFK)")
-            mention(label="Report", icon="📄", url="https://drive.google.com/drive/u/4/folders/1NfsRr1P3xAkuJq3HEJ9LQU1uCo6TZIFK",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_shopee)
-        with text_column:
-            st.subheader("[Shopee Product and Design Challenge 2021](https://careers.shopee.sg/event-detail/396)")
-            st.write("Redesigned user interface of Shopee mobile app using Figma to reduce clutter and increase user utilization of in-app rewards")
-            #st.write("[Figma Prototype](https://www.figma.com/proto/3UXT29N1RgVGDUlSBeWcPN/UI-Prototype-1?node-id=18-3&viewport=-675%2C231%2C0.32458001375198364&scaling=scale-down) | [Pitch Deck](https://drive.google.com/file/d/12qnveB-SMjG_gF_gwNj3Nr-JsKeyKd6g/view)")
-            mention(label="Figma", icon="📱", url="https://www.figma.com/proto/3UXT29N1RgVGDUlSBeWcPN/UI-Prototype-1?node-id=18-3&viewport=-675%2C231%2C0.32458001375198364&scaling=scale-down",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_sbcc)
-        with text_column:
-            st.subheader("Singapore Business Case Competition 2020 - Hosted by [NTU Business Solutions Club](https://clubs.ntu.edu.sg/businesssolutions/)")
-            st.write("Proposed solutions to help increase competitiveness of BreadTalk after performing market research and analysis on the F&B industry")
-            #st.write("[Pitch Deck](https://drive.google.com/file/d/1kLgbBVuth4KvfhjaK00n30xlr4bmn-iM/view)")
-            mention(label="Pitch Deck", icon="🪧", url="https://drive.google.com/file/d/1kLgbBVuth4KvfhjaK00n30xlr4bmn-iM/view",)
-    with st.container():
-        image_column, text_column = st.columns((1,3))
-        with image_column:
-            st.image(img_runes)
-        with text_column:
-            st.subheader("Contest 2.2 Beautiful Runes - CS1010S Programming Methodology")
-            st.write("Awarded 1st Place for 2D Runes category out of over 600 students enrolled in the module for Academic Year 2020/21 Semester 1")
-            st.write("2D pixel art created using Pillow (PIL) Library in Python")
-            #st.write("[Github Repo](https://github.com/harrychangjr/runes)")
-            mention(label="Github Repo", icon="github", url="https://github.com/harrychangjr/runes",)
+            st.subheader("Byjus Think and Learn Challenge 2015")
+            st.write("Cleared the first round beating students from more than 20 schools")
+            st.markdown("""
+                - Cleared the first round which comprised of more than 1000 students from several school of Kolkata
+                - Quiz competition based on Science and Aptitude knowledge
+                - Participated in the second round, but lost out
+            """)
+
 
 elif choose == "Blog":
     st.header("Blog")
-    selected_options = ["Overview", "Article & Essay List",
-    #"“It’s not pink, it’s salmon” – Why I returned to my previous start-up for FREE", 
-                        "Mayans MC – Season 5 Detailed Preview",
-                        "Finding success as an outlier (Extracted Using Wordpress REST API)",
+    selected_options = ["Overview", "Option1",
+                        "Option2",
                         ]
     selected = st.selectbox("Which section or write-up would you like to read?", options = selected_options)
     st.write("Current selection:", selected)
@@ -923,144 +678,11 @@ elif choose == "Blog":
         In this section, you will be able to read some of my finest write-ups from my university experiences, based on topics varying from science to politics. For those looking forward to a good read, enjoy!
         """)
 
-    elif selected == "Article & Essay List":
-        st.subheader("Article & Essay List")
-        with st.container():
-            text_column, image_column = st.columns((3,1))
-            with image_column:
-                st.image(img_mayans)
-            with text_column:
-                st.subheader("Mayans MC - Season 5 Detailed Preview")
-                st.write("*May 13, 2023* | [*Article*](https://antcabbage.wordpress.com/2023/05/13/mayans-mc-season-5-detailed-preview/)")
-                st.write("A preview of the fifth and final season Mayans MC, along with its similarities with Sons of Anarchy")
-        with st.container():
-            text_column, image_column = st.columns((3,1))
-            with image_column:
-                st.image(img_outlier)
-            with text_column:
-                st.subheader("Finding success as an outlier")
-                st.write("*April 12, 2023* | [*Article*](https://antcabbage.wordpress.com/2023/04/12/finding-success-as-an-outlier/)")
-                st.write("A personal reflection of my tumultous undergraduate journey so far - and how I finally found my resolve")
-                #st.write("[Article](https://antcabbage.wordpress.com/2023/04/12/finding-success-as-an-outlier/)")       
-        with st.container():
-            text_column, image_column = st.columns((3,1))
-            with image_column:
-                st.image(img_raffles)
-            with text_column:
-                st.subheader("Essays for Final Test - GES1037: A History of Singapore in Ten Objects")
-                st.write("*April 29, 2022* | [*Essays*](https://github.com/harrychangjr/ges1037/blob/main/GES1037%20Take%20Home%20Test.pdf)")
-                st.markdown("""
-                Essays written within 24-hour window in Academic Year 2021/22 Semester 2:
-                - Q4: Should the statue of Sir Stamford Raffles disappear for good?
-                - Q6: Should the Women's Charter replace one of the existing ten objects in the module? 
-                """)       
+    elif selected == "Option1":
+        st.subheader("Option1")
 
-    elif selected == "Mayans MC – Season 5 Detailed Preview":
-        with st.echo(code_location="below"):
-            import streamlit as st
-            import requests
-            from bs4 import BeautifulSoup
-
-            def arrange_images_side_by_side(html_content):
-                soup = BeautifulSoup(html_content, "html.parser")
-                images = soup.find_all("img")
-
-                i = 0
-                while i < len(images) - 1:
-                    current_image = images[i]
-                    next_image = images[i + 1]
-
-                    current_figure = current_image.find_parent("figure")
-                    next_figure = next_image.find_parent("figure")
-
-                    # Check if the next image is an immediate sibling
-                    if current_figure and next_figure and current_figure.find_next_sibling() == next_figure:
-                        container = soup.new_tag("div", style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;")
-                        current_figure.wrap(container)
-                        next_figure.wrap(container)
-
-                        # Set the same height for both images and add a little margin for better centering
-                        current_image['style'] = "height: 400px; margin: auto;"
-                        next_image['style'] = "height: 400px; margin: auto;"
-
-                        # Update the images list
-                        images = soup.find_all("img")
-                    i += 1
-
-                return str(soup)
-
-            def get_post_by_id(url, post_id):
-                site_url = url.replace("https://", "").replace("http://", "")
-                response = requests.get(f"https://public-api.wordpress.com/wp/v2/sites/{site_url}/posts/{post_id}?_embed")
-                response.raise_for_status()
-                return response.json()
-
-            url = "https://antcabbage.wordpress.com"
-            post_id = 83
-            post = get_post_by_id(url, post_id)
-
-            post_title = post["title"]["rendered"]
-            post_content = post["content"]["rendered"]
-            soup = BeautifulSoup(post_content, "html.parser")
-            clean_post_content = soup.get_text()
-            st.subheader(post_title)
-            st.write("May 13, 2023 | [Article](https://antcabbage.wordpress.com/2023/05/13/mayans-mc-season-5-detailed-preview/)")
-            st.write("*The content of this article was extracted using `requests` and `BeautifulSoup`, along with the Worpress REST API. Thus, there may be some formatting and alignment issues, especially for the images and/or video featured. A code block will also be shown at the bottom of this article to demonstrate how the REST API was used with the respective libraries to extract the content from the Wordpress site*")
-            modified_content = arrange_images_side_by_side(post_content)
-            st.markdown(modified_content, unsafe_allow_html=True)
-    elif selected == "Finding success as an outlier (Extracted Using Wordpress REST API)":
-        with st.echo(code_location="below"):
-            import streamlit as st
-            import requests
-            from bs4 import BeautifulSoup
-
-            def arrange_images_side_by_side(html_content):
-                soup = BeautifulSoup(html_content, "html.parser")
-                images = soup.find_all("img")
-
-                i = 0
-                while i < len(images) - 1:
-                    current_image = images[i]
-                    next_image = images[i + 1]
-
-                    current_figure = current_image.find_parent("figure")
-                    next_figure = next_image.find_parent("figure")
-
-                    # Check if the next image is an immediate sibling
-                    if current_figure and next_figure and current_figure.find_next_sibling() == next_figure:
-                        container = soup.new_tag("div", style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;")
-                        current_figure.wrap(container)
-                        next_figure.wrap(container)
-
-                        # Set the same height for both images and add a little margin for better centering
-                        current_image['style'] = "height: 400px; margin: auto;"
-                        next_image['style'] = "height: 400px; margin: auto;"
-
-                        # Update the images list
-                        images = soup.find_all("img")
-                    i += 1
-
-                return str(soup)
-
-            def get_post_by_id(url, post_id):
-                site_url = url.replace("https://", "").replace("http://", "")
-                response = requests.get(f"https://public-api.wordpress.com/wp/v2/sites/{site_url}/posts/{post_id}?_embed")
-                response.raise_for_status()
-                return response.json()
-
-            url = "https://antcabbage.wordpress.com"
-            post_id = 72
-            post = get_post_by_id(url, post_id)
-
-            post_title = post["title"]["rendered"]
-            post_content = post["content"]["rendered"]
-            soup = BeautifulSoup(post_content, "html.parser")
-            clean_post_content = soup.get_text()
-            st.subheader(post_title)
-            st.write("April 12, 2023 | [Article](https://antcabbage.wordpress.com/2023/04/12/finding-success-as-an-outlier/)")
-            st.write("*The content of this article was extracted using `requests` and `BeautifulSoup`, along with the Worpress REST API. Thus, there may be some formatting and alignment issues, especially for the images and/or video featured. A code block will also be shown at the bottom of this article to demonstrate how the REST API was used with the respective libraries to extract the content from the Wordpress site*")
-            modified_content = arrange_images_side_by_side(post_content)
-            st.markdown(modified_content, unsafe_allow_html=True)
+    elif selected == "Option2":
+        st.subheader("Option2")
         
         
 
@@ -1072,45 +694,33 @@ elif choose == "Gallery":
     st.write("Current selection:", selected)
     if selected == "Overview":
         st.subheader("Overview")
-        st.markdown("""
-        > "Photos are always the greatest gifts, because the memories from them will remain forever."
-        
-        My sister said this to me when I was in primary school. Having an immature and materialistic mindset back then, I was disappointed when I did not receive a present from her back then.
+        st.markdown("""""")
 
-        The quote that she shared that day - was something that I failed to appreciate only until recently. Over the course of these past few years, I have made many memories - both good and bad - which I will fondly remember.
 
-        Thus, this section is a compilation of highlights from my educational years, starting from primary school (7 years old), until the recent day (*in progress*). These images are not only meant to remind myself of the good times that I once had with long lost friends who I hardly keep in touch with nowadays due to our busy schedules, but also serve to show potential viewers a glimpse of what my life was like beyond academics.
-
-        In particular, I hope to be able to refer to this time and time again, especially upon graduating from university and when I formally commence my full-time career.
-
-        To those viewing my website and this section in particular, enjoy the pictures!
-
-        *Note: Photos filed under each year are not necessarily posted in any particular order, as I may have forgotten the exact dates of some photos that were taken.*
-        """)
     elif selected == "Images":
         st.subheader("Images")
-        st.write("*Baby steps*")
-        # Load the images
-        num_images = 2
-        images_2005 = [Image.open(f"gallery/2005_{i}.jpg") for i in range(1, num_images + 1)]
-
-        # Display the images in a grid
-        num_columns = 2
-        num_rows = num_images // num_columns
-
-        for row in range(num_rows):
-            # Create a row of columns
-            columns = st.columns(num_columns)
-    
-            # Display the images in the columns
-            for col in range(num_columns):
-                index = row * num_columns + col
-                with columns[col]:
-                    st.image(images_2005[index], use_column_width=True)
+        # st.write("*Baby steps*")
+        # # Load the images
+        # num_images = 2
+        # images_2005 = [Image.open(f"gallery/2005_{i}.jpg") for i in range(1, num_images + 1)]
+        #
+        # # Display the images in a grid
+        # num_columns = 2
+        # num_rows = num_images // num_columns
+        #
+        # for row in range(num_rows):
+        #     # Create a row of columns
+        #     columns = st.columns(num_columns)
+        #
+        #     # Display the images in the columns
+        #     for col in range(num_columns):
+        #         index = row * num_columns + col
+        #         with columns[col]:
+        #             st.image(images_2005[index], use_column_width=True)
 
 
 elif choose == "Resume":   
-    resume_url = "https://drive.google.com/file/d/1n4TQxDkn98Tu5i2--aNKbK-JvP7xGcDe/view?usp=drive_link"
+    resume_url = "https://drive.google.com/file/d/1rrBqTveitMKHJ-VFrHVCAGwOJNL9rngd/view?usp=sharing"
     st.header("Resume")
     st.write("*In case your current browser cannot display the PDF documents, do refer to the hyperlink below!*")
 
@@ -1150,18 +760,8 @@ elif choose == "Contact":
     with st.container():
         text_column, mid, image_column = st.columns((1,0.2,0.5))
         with text_column:
-            st.write("Let's connect! You may either reach out to me at harrychang.work@gmail.com or use the form below!")
-            #with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
-                #st.write('Please help us improve!')
-                #Name=st.text_input(label='Your Name',
-                                    #max_chars=100, type="default") #Collect user feedback
-                #Email=st.text_input(label='Your Email', 
-                                    #max_chars=100,type="default") #Collect user feedback
-                #Message=st.text_input(label='Your Message',
-                                        #max_chars=500, type="default") #Collect user feedback
-                #submitted = st.form_submit_button('Submit')
-                #if submitted:
-                    #st.write('Thanks for your contacting us. We will respond to your questions or inquiries as soon as possible!')
+            st.write("Let's connect! You may either reach out to me at arigofficial71@gmail.com or use the form below!")
+
             def create_database_and_table():
                 conn = sqlite3.connect('contact_form.db')
                 c = conn.cursor()
@@ -1221,18 +821,16 @@ elif choose == "Contact":
 
 
             st.write("Alternatively, feel free to check out my social accounts below!")
-            linkedin_url = "https://www.linkedin.com/in/harrychangjr/"
-            github_url = "https://github.com/harrychangjr"
-            email_url = "mailto:harrychang.work@gmail.com"
+            linkedin_url = "https://www.linkedin.com/in/arijeet-dasgupta/"
+            github_url = "https://github.com/DhumPotashPermanganate/"
+            email_url = "mailto:arigofficial71@gmail.com"
             st.markdown(
                 social_icons(32, 32, LinkedIn=linkedin_url, GitHub=github_url, Email=email_url),
                 unsafe_allow_html=True)
             st.markdown("")
-            #st.write("© 2023 Arijeet Dasgupta")
-            #st.write("[LinkedIn](https://linkedin.com/in/harrychangjr) | [Github](https://github.com/harrychangjr) | [Linktree](https://linktr.ee/harrychangjr)")
         with mid:
             st.empty()
         with image_column:
-            st.image(img_ifg)
+            st.image(img_contact)
 st.markdown("*Copyright © 2023 Arijeet Dasgupta*")
 
